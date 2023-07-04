@@ -4,7 +4,7 @@ const Projects = () => {
   return (
     <div className="section" id="projects">
       <div className="mb-8">
-        <h2 className="text-[1.5rem] font-bold">My Collections</h2>
+        <h2 className="text-[1.5rem] font-bold">Projects</h2>
         <div className=" w-14 h-[3px] rounded-sm bg-blue"></div>
       </div>
 
@@ -27,20 +27,14 @@ const Projects = () => {
                   />
                   <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2">
-                      The Coldest Sunset
+                      {project.title}
                     </div>
                     <p>
-                      {project?.url?.map((u) => {
-                        return (
-                          <div>
-                            <a href={u}>
-                              <button className="px-2 py-2 bg-slate-300 rounded-md font-semibold hover:bg-slate-400">
-                                Live Site
-                              </button>
-                            </a>
-                          </div>
-                        );
-                      })}
+                      <a href={project.url}>
+                        <button className="px-2 py-2 bg-slate-300 rounded-md font-semibold hover:bg-slate-400">
+                          Live Site
+                        </button>
+                      </a>
                     </p>
                     {/* <p className="text-gray-700 text-base">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.

@@ -1,15 +1,9 @@
-import { ImPencil } from "react-icons/im";
-import { BsShop, BsHeart, BsWatch, BsStar } from "react-icons/bs";
-import { BiCoffeeTogo } from "react-icons/bi";
-import { TiDeviceDesktop } from "react-icons/ti";
-import { TbSpeakerphone } from "react-icons/tb";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { AiOutlineMail } from "react-icons/ai";
 
-import project1 from "./assets/project1.jpg";
-import project2 from "./assets/project2.jpg";
-import project3 from "./assets/project3.jpg";
+import p1 from "./assets/p1.png";
+import p2 from "./assets/p2.png";
 
 export const navLinks = [
   {
@@ -30,27 +24,20 @@ export const navLinks = [
   },
 ];
 
-export const btns = [
-  { id: 1, name: "All", value: "all" },
-  { id: 2, name: "UI/UX", value: "ui/ux" },
-  { id: 3, name: "Web Design", value: "web design" },
-  { id: 4, name: "Marketing", value: "marketing" },
-];
-
 export const projects = [
   {
     id: 1,
-    image: project1,
-    value: "web design",
+    image: p1,
+    title: "Mern Resume Maker",
     tags: ["react", "express", "node", "mongodb"],
-    url: ["https://www.google.com/"],
+    url: ["https://mern-resumemaker-app.onrender.com"],
   },
   {
     id: 2,
-    image: project2,
-    value: "u",
+    image: p2,
+    title: "Mern Movie Reviews",
     tags: ["react", "express", "node", "mongodb"],
-    url: ["https://www.google.com/"],
+    url: ["https://mern-movie-reviews.onrender.com"],
   },
 ];
 
@@ -63,7 +50,7 @@ export const contacts = [
   {
     id: 2,
     icon: <HiOutlineLocationMarker />,
-    text: "28 Green Tower, street Name, New York, USA",
+    text: "Malad East, Mumbai, 400097,India",
   },
   {
     id: 3,
