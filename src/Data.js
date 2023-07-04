@@ -1,6 +1,7 @@
 import { TfiHeadphoneAlt } from "react-icons/tfi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { AiOutlineMail } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 
 import p1 from "./assets/p1.png";
 import p2 from "./assets/p2.png";
@@ -31,6 +32,9 @@ export const projects = [
     title: "Mern Resume Maker",
     tags: ["react", "express", "node", "mongodb"],
     url: ["https://mern-resumemaker-app.onrender.com"],
+    url2: ["https://github.com/sumanthpweb11/mern_resume_maker_frontend"],
+    url3: ["https://github.com/sumanthpweb11/mern_resume_maker_backend"],
+    icon: <AiFillGithub />,
   },
   {
     id: 2,
@@ -38,6 +42,8 @@ export const projects = [
     title: "Mern Movie Reviews",
     tags: ["react", "express", "node", "mongodb"],
     url: ["https://mern-movie-reviews.onrender.com"],
+    url2: ["https://github.com/sumanthpweb11/mern_movie_reviews"],
+    icon: <AiFillGithub />,
   },
 ];
 

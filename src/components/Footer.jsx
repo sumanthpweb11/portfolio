@@ -4,13 +4,18 @@ const Footer = () => {
   return (
     <div className="container mx-auto p-4 flex flex-wrap gap-2 items-center justify-between">
       <div>
-        <a href="" className="mr-2 text-blue text-[0.9rem]">
-          Twitter
+        <a
+          href="https://www.linkedin.com/in/sumanth-prabhu-721b96281/"
+          className="mr-2 text-blue text-[0.9rem]"
+          target="_blank"
+        >
+          Linkedin
         </a>
-        <a href="" className="mr-2 text-blue text-[0.9rem]">
-          Facebook
-        </a>
-        <a href="" className="mr-2 text-blue  text-[0.9rem]">
+        <a
+          href="https://www.instagram.com/photographic_reminiscence/?hl=en"
+          className="mr-2 text-blue text-[0.9rem]"
+          target="_blank"
+        >
           Instagram
         </a>
       </div>

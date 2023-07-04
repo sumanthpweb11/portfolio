@@ -8,9 +8,9 @@ const Projects = () => {
         <div className=" w-14 h-[3px] rounded-sm bg-blue"></div>
       </div>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 mt-12 gap-2">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 mt-12 gap-2 ">
         {projects &&
-          projects.map((project) => {
+          projects.map((project, i) => {
             return (
               <div
                 layout
@@ -30,11 +30,28 @@ const Projects = () => {
                       {project.title}
                     </div>
                     <p>
-                      <a href={project.url}>
+                      <a href={project.url} target="_blank">
                         <button className="px-2 py-2 bg-slate-300 rounded-md font-semibold hover:bg-slate-400">
                           Live Site
                         </button>
                       </a>
+                    </p>
+                    <p>
+                      <a href={project.url2} target="_blank">
+                        <button className="flex gap-1 items-center mt-2 px-2 py-2 bg-slate-300 rounded-md font-semibold hover:bg-slate-400">
+                          Github Frontend
+                          <span>{project.icon}</span>
+                        </button>
+                      </a>
+
+                      {i === 0 && (
+                        <a href={project.url3} target="_blank">
+                          <button className="flex gap-1 items-center mt-2 px-2 py-2 bg-slate-300 rounded-md font-semibold hover:bg-slate-400">
+                            Github Backend
+                            <span>{project.icon}</span>
+                          </button>
+                        </a>
+                      )}
                     </p>
                     {/* <p className="text-gray-700 text-base">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
